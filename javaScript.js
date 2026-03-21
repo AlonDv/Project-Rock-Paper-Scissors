@@ -16,3 +16,12 @@ function getComputerChoice(){
 }
 
 
+function getHumanChoice(){
+    let humanChoice = prompt("Chose one, (rock, paper, scissors): ");
+    humanChoice = humanChoice.toLocaleLowerCase();
+    return humanChoice; 
+}
+
+
+console.log(getHumanChoice());
+
