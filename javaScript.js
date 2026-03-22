@@ -27,6 +27,41 @@ function getHumanChoice(){
     humanChoice = humanChoice.toLocaleLowerCase();
     return humanChoice; 
 }
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+function playRound(humanChoice,computerChoice){
+    console.log(`Human:${humanChoice}, Computer:${computerChoice}`);
+
+    switch(true){
+
+        case humanChoice == computerChoice:
+            console.log("Its a tie!")
+            break;
+        case humanChoice === "rock" && computerChoice === "scissors":
+            console.log("Human wins!")
+            humanScore++; 
+            break;
+
+        case humanChoice === "paper" && computerChoice === "rock":
+            console.log("Human wins!")
+            humanScore++; 
+            break; 
+
+        case humanChoice === "scissors" && computerChoice === "paper":
+            console.log("Human wins!")
+            humanScore++
+            break;
+
+        default:
+            console.log("Computer wins!")
+            computerScore++;
+            break;
+    }
+
+}
+
+playRound(humanSelection, computerSelection);
 
 
 
