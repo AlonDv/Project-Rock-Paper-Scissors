@@ -95,4 +95,3 @@ let computerSelection;
 
 
 
-playGame();

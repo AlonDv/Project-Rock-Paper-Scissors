@@ -1,0 +1,94 @@
+*{
+    font-family:Montserrat;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.scoreDiv{
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.scoreDiv div{
+    text-align: center;
+}
+
+.pScoreText, .cScoreText{
+    font-size:  50px;
+}
+
+
+main{
+    margin-top: 60px;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.action{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.action:hover{
+    background-color: gray;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.resultsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.reset{
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: gray;
+}
